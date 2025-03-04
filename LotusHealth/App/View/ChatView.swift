@@ -122,7 +122,19 @@ struct LotusChatView: View {
         .onAppear { //initializiing state on appear
             self.messages[0].text = "Greetings, \(self.userName)! How can I support you on your journey to better health and wellness?"
         }
+        .onChange(of: messages) { _ in
+            scrollToBottom()
+        }
+        .scrollDismissesKeyboard(.interactively)
     }
+    
+    
+    func scrollToBottom() {
+        withAnimation {
+            scrollProxy?.scrollTo(self.messages.last?.id, anchor: .bottom)
+        }
+    }
+    
     
     private func sendMessage() {
         print("sending message ==> Construct message body and call API", messageText.trim())
