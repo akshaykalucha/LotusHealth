@@ -1,0 +1,6 @@
+framework module Pods_LotusHealthTests {
+  umbrella header "Pods-LotusHealthTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

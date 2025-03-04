@@ -1,0 +1,18 @@
+//
+//  Staging.xcconfig
+//  LotusHealth
+//
+//  Created by Akshay Kalucha on 2/28/25.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+
+IS_APP_NAME = LotusHealth Staging // application launch name
+IS_APP_VERSION = 1.1.1
+IS_APP_BUNDLE_ID = com.lotushealth.ai // bunde ID for linking
+OPENAI_API_KEY = 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
+env = staging // development environment
+
+CMSBaseURL = https:\/\/api.openai.com/
