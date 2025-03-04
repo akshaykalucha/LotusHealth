@@ -120,7 +120,7 @@ struct LotusChatView: View {
         .navigationBarHidden(true) // Hide default navigation bar
         .animation(.spring(), value: isResponseStreaming)
         .onAppear { //initializiing state on appear
-            self.messages[0].text = "Greetings, \(self.userName)! How may I assist you in exploring the universe?"
+            self.messages[0].text = "Greetings, \(self.userName)! How can I support you on your journey to better health and wellness?"
         }
     }
     

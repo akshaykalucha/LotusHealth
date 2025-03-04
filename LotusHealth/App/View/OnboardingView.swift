@@ -31,7 +31,7 @@ struct HomeView: View {
     @State private var customGender: String = "" // Custom gender input for "Other"
     @FocusState private var focusedField: Field? // Track focused TextField
     
-    private let descriptionText = "Your AI companion for exploring the universe. Ask anything, get answers!"
+    private let descriptionText = "Your personal health assistant. Get informed, stay well! "
     private let genderOptions = ["Male", "Female", "Other"]
     
     enum Field {
